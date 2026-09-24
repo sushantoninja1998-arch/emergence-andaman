@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMERGENCE ANDAMAN | Explore. Experience. Remember.</title>
+<meta name="description" content="Discover Andaman with EMERGENCE ANDAMAN — island holidays, beaches, adventures and customised tours.">
+<style>
+:root{--ink:#082f3a;--sea:#087f8c;--aqua:#19b5b0;--sand:#fff8ea;--white:#fff;--muted:#60747b;--shadow:0 18px 50px rgba(5,47,58,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}.nav{position:absolute;z-index:10;top:0;left:0;right:0;padding:20px 5%;display:flex;align-items:center;justify-content:space-between;color:white}
+.logo{font-weight:900;letter-spacing:1.5px;font-size:20px}.logo span{color:#7ff3e9}.links{display:flex;gap:28px;font-weight:700;font-size:14px}.menu{display:none}
+.hero{min-height:760px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(115deg,rgba(4,39,49,.82),rgba(4,39,49,.25)),url('https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:160px;background:linear-gradient(transparent,#fff)}
+.hero-content{position:relative;z-index:2;color:#fff;max-width:780px;margin:70px 5% 0}.eyebrow{text-transform:uppercase;letter-spacing:3px;font-weight:800;color:#83eee5;font-size:13px}.hero h1{font-size:clamp(46px,7vw,88px);line-height:.98;margin:16px 0}.hero p{font-size:20px;line-height:1.6;max-width:650px;color:#eefbfb}.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{padding:15px 22px;border-radius:999px;font-weight:800;border:1px solid transparent;display:inline-block}.primary{background:#19b5b0;color:#fff}.ghost{border-color:#fff;color:#fff;background:rgba(255,255,255,.08)}
+.search{position:relative;z-index:3;margin:-48px auto 0;width:min(1100px,90%);background:#fff;border-radius:20px;box-shadow:var(--shadow);padding:22px;display:grid;grid-template-columns:1.3fr 1fr 1fr auto;gap:12px}.field{padding:13px 15px;border:1px solid #dce8ea;border-radius:12px}.field small{display:block;color:var(--muted);font-weight:700;margin-bottom:5px}.field input,.field select{border:0;outline:0;width:100%;font-size:15px;background:transparent;color:var(--ink)}
+section{padding:85px 5%}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:34px}.section-head h2{font-size:42px;margin:0}.section-head p{max-width:520px;color:var(--muted);line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{border-radius:22px;overflow:hidden;background:#fff;box-shadow:var(--shadow);border:1px solid #edf2f2}.card img{width:100%;height:220px;object-fit:cover}.card-body{padding:22px}.tag{display:inline-block;background:#e6fbf8;color:#087f8c;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}.card h3{font-size:23px;margin:14px 0 8px}.card p{color:var(--muted);line-height:1.6}.price{font-weight:900;font-size:20px;margin-top:16px}.price small{font-size:12px;color:var(--muted);font-weight:600}
+.destinations{background:var(--sand)}.destination-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.destination{height:300px;border-radius:20px;overflow:hidden;position:relative;background-size:cover;background-position:center}.destination div{position:absolute;inset:auto 0 0;padding:22px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.75))}.destination h3{margin:0 0 5px;font-size:24px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.feature{padding:25px;border-radius:18px;background:#f5fbfb}.icon{font-size:32px}.feature h3{margin:12px 0 7px}.feature p{color:var(--muted);line-height:1.5}
+.cta{margin:20px 5% 85px;padding:60px;border-radius:28px;color:#fff;background:linear-gradient(110deg,#064956,#0d9d9b);display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:42px;margin:0 0 10px}.cta p{opacity:.9;max-width:600px;line-height:1.6}
+footer{background:#062f39;color:#d8edef;padding:55px 5% 25px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:35px}.footer h3{color:#fff}.footer p,.footer a{color:#a9c4c8;line-height:1.8}.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:35px;padding-top:20px;color:#88aeb3;font-size:13px}
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:50;align-items:center;justify-content:center;padding:20px}.modal-box{background:#fff;border-radius:22px;padding:28px;width:min(560px,100%);position:relative}.close{position:absolute;right:18px;top:15px;border:0;background:none;font-size:26px;cursor:pointer}.modal-box h2{margin-top:0}.form{display:grid;gap:12px}.form input,.form select,.form textarea{width:100%;padding:14px;border:1px solid #d6e4e6;border-radius:10px;font:inherit}.form textarea{min-height:110px}
+@media(max-width:850px){.links{display:none}.menu{display:block;border:0;background:rgba(255,255,255,.15);color:#fff;border-radius:10px;padding:10px 13px;font-size:20px}.hero{min-height:690px}.search{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.destination-grid{grid-template-columns:1fr 1fr}.features{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.cta{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.hero-content{margin-top:80px}.hero h1{font-size:48px}.hero p{font-size:17px}.search{grid-template-columns:1fr;margin-top:-35px}.cards,.destination-grid,.features,.footer-grid{grid-template-columns:1fr}.section-head{display:block}.section-head h2,.cta h2{font-size:32px}.cta{padding:35px;margin-bottom:55px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="logo" href="#">EMERGENCE <span>ANDAMAN</span></a>
+  <div class="links"><a href="#packages">Packages</a><a href="#destinations">Destinations</a><a href="#activities">Experiences</a><a href="#about">Why Us</a><a href="#contact">Contact</a></div>
+  <button class="menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+</nav>
+
+<header class="hero">
+ <div class="hero-content">
+  <div class="eyebrow">Island holidays • Andaman & Nicobar</div>
+  <h1>Escape to the islands.</h1>
+  <p>Crystal-clear water, tropical beaches and unforgettable island experiences. Let EMERGENCE ANDAMAN plan your journey from arrival to departure.</p>
+  <div class="buttons"><a class="btn primary" href="#packages">Explore Packages</a><button class="btn ghost" onclick="openModal()">Plan My Trip</button></div>
+ </div>
+</header>
+
+<div class="search">
+ <div class="field"><small>Destination</small><input id="q" placeholder="e.g. Port Blair, Havelock"></div>
+ <div class="field"><small>Travellers</small><select id="travellers"><option>2 Adults</option><option>3 Adults</option><option>4 Adults</option><option>5+ Adults</option></select></div>
+ <div class="field"><small>Travel month</small><select><option>October</option><option>November</option><option>December</option><option>January</option><option>February</option></select></div>
+ <button class="btn primary" onclick="openModal()">Get Quote</button>
+</div>
+
+<section id="packages">
+ <div class="section-head"><div><div class="eyebrow" style="color:#087f8c">Popular journeys</div><h2>Made for island time.</h2></div><p>Flexible itineraries for couples, families and groups. Tell us what you want to experience and we’ll help shape the trip.</p></div>
+ <div class="cards">
+  <article class="card"><img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=80"><div class="card-body"><span class="tag">5 DAYS / 4 NIGHTS</span><h3>Andaman Highlights</h3><p>Port Blair • Swaraj Dweep • beaches • island sightseeing.</p><div class="price">₹24,999 <small>per person*</small></div></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=1000&q=80"><div class="card-body"><span class="tag">6 DAYS / 5 NIGHTS</span><h3>Island Escape</h3><p>Slow mornings, turquoise water, sunsets and hand-picked experiences.</p><div class="price">₹29,999 <small>per person*</small></div></div></article>
+  <article class="card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"><div class="card-body"><span class="tag">CUSTOM TRIP</span><h3>Your Andaman Story</h3><p>Build your own itinerary around your dates, interests and budget.</p><div class="price">Enquire now</div></div></article>
+ </div>
+</section>
+
+<section class="destinations" id="destinations">
+ <div class="section-head"><div><div class="eyebrow" style="color:#087f8c">Discover</div><h2>Places you'll remember.</h2></div><p>From lively Port Blair to peaceful island beaches, discover the landscapes that make Andaman special.</p></div>
+ <div class="destination-grid">
+  <div class="destination" style="background-image:url('https://images.unsplash.com/photo-1516690561799-46d8f74f9abf?auto=format&fit=crop&w=800&q=80')"><div><h3>Port Blair</h3><span>Gateway to the islands</span></div></div>
+  <div class="destination" style="background-image:url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80')"><div><h3>Swaraj Dweep</h3><span>Beaches & sunsets</span></div></div>
+  <div class="destination" style="background-image:url('https://images.unsplash.com/photo-1540202404-a2f29016b523?auto=format&fit=crop&w=800&q=80')"><div><h3>Shaheed Dweep</h3><span>Quiet island charm</span></div></div>
+  <div class="destination" style="background-image:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80')"><div><h3>Ross Island</h3><span>History & nature</span></div></div>
+ </div>
+</section>
+
+<section id="activities">
+ <div class="section-head"><div><div class="eyebrow" style="color:#087f8c">Experiences</div><h2>Do more than sightseeing.</h2></div></div>
+ <div class="features">
+  <div class="feature"><div class="icon">🤿</div><h3>Scuba Diving</h3><p>Explore vibrant underwater life with organised experiences.</p></div>
+  <div class="feature"><div class="icon">🏝️</div><h3>Beach Days</h3><p>Plan unhurried time at some of the islands' beautiful beaches.</p></div>
+  <div class="feature"><div class="icon">🚤</div><h3>Island Hopping</h3><p>Connect the islands and make the most of your holiday.</p></div>
+  <div class="feature"><div class="icon">🌅</div><h3>Sunset Moments</h3><p>Build your itinerary around memorable golden-hour views.</p></div>
+ </div>
+</section>
+
+<div class="cta" id="about">
+ <div><h2>Your island holiday starts here.</h2><p>Share your travel dates and preferences. Our team can help you create a practical, personalised Andaman itinerary.</p></div>
+ <button class="btn primary" onclick="openModal()">Start Planning →</button>
+</div>
+
+<footer id="contact">
+ <div class="footer-grid">
+  <div><h3>EMERGENCE ANDAMAN</h3><p>Island journeys, thoughtfully planned.<br>Andaman & Nicobar Islands, India.</p></div>
+  <div><h3>Explore</h3><p><a href="#packages">Packages</a><br><a href="#destinations">Destinations</a><br><a href="#activities">Experiences</a></p></div>
+  <div><h3>Contact</h3><p>📞 +91 98765 43210<br>✉️ hello@emergenceandaman.com<br>📍 Port Blair</p></div>
+  <div><h3>Quick enquiry</h3><p>Ready to plan? Tap below and send your travel details.</p><button class="btn primary" onclick="openModal()">Enquire Now</button></div>
+ </div>
+ <div class="copyright">© 2026 EMERGENCE ANDAMAN. All rights reserved. &nbsp; *Package prices shown are illustrative and should be confirmed before booking.</div>
+</footer>
+
+<div class="modal" id="modal">
+ <div class="modal-box">
+  <button class="close" onclick="closeModal()">×</button>
+  <h2>Plan your Andaman trip</h2>
+  <p style="color:#60747b">Send your details and we’ll get back to you.</p>
+  <form class="form" id="enquiryForm">
+   <input id="name" required placeholder="Your name">
+   <input id="phone" required placeholder="WhatsApp / phone number">
+   <input id="email" type="email" placeholder="Email address">
+   <input id="travelStart" type="date" required>
+   <input id="travelEnd" type="date">
+   <input id="adults" type="number" min="1" value="2" placeholder="Adults">
+   <input id="children" type="number" min="0" value="0" placeholder="Children">
+   <select id="package"><option value="">Select package</option><option>Andaman Highlights</option><option>Island Escape</option><option>Your Andaman Story</option></select>
+   <select id="destination"><option value="">Preferred destination</option><option>Port Blair</option><option>Swaraj Dweep</option><option>Shaheed Dweep</option><option>Ross Island</option></select>
+   <input id="hotel" placeholder="Hotel preference">
+   <input id="budget" placeholder="Approximate budget">
+   <input id="pickupDrop" placeholder="Pickup / drop requirement">
+   <textarea id="message" placeholder="Special requests: honeymoon, diving, family trip, sightseeing..."></textarea>
+   <button class="btn primary" type="submit" id="submitBtn">Send enquiry</button>
+   <div id="formStatus" style="color:#60747b;font-size:14px"></div>
+  </form>
+ </div>
+</div>
+<script>
+function openModal(){document.getElementById('modal').style.display='flex'}
+function closeModal(){document.getElementById('modal').style.display='none'}
+window.onclick=e=>{if(e.target.id==='modal')closeModal()}
+const CRM_ENDPOINT = ''; // Add your secure server/serverless endpoint here before going live.
+
+function collectEnquiry(){
+ return {
+  name:document.getElementById('name').value.trim(),
+  phone:document.getElementById('phone').value.trim(),
+  email:document.getElementById('email').value.trim(),
+  travelStart:document.getElementById('startDate').value,
+  travelEnd:document.getElementById('endDate').value,
+  adults:Number(document.getElementById('adults').value||0),
+  children:Number(document.getElementById('children').value||0),
+  package:document.getElementById('package').value,
+  destination:document.getElementById('destination').value.trim(),
+  budget:document.getElementById('budget').value.trim(),
+  hotelPreference:document.getElementById('hotel').value.trim(),
+  pickupDrop:document.getElementById('pickup').value.trim(),
+  specialRequests:document.getElementById('message').value.trim()
+ };
+}
+
+async function submitEnquiry(e){
+  e.preventDefault();
+  const btn=document.getElementById('submitBtn'), status=document.getElementById('formStatus');
+  btn.disabled=true; btn.textContent='Sending enquiry...'; status.textContent='';
+  const data={
+    name:document.getElementById('name').value.trim(),
+    phone:document.getElementById('phone').value.trim(),
+    email:document.getElementById('email').value.trim(),
+    travelStart:document.getElementById('travelStart').value,
+    travelEnd:document.getElementById('travelEnd').value,
+    adults:Number(document.getElementById('adults').value||0),
+    children:Number(document.getElementById('children').value||0),
+    package:document.getElementById('package').value,
+    destination:document.getElementById('destination').value,
+    hotel:document.getElementById('hotel').value.trim(),
+    budget:document.getElementById('budget').value.trim(),
+    pickupDrop:document.getElementById('pickupDrop').value.trim(),
+    message:document.getElementById('message').value.trim()
+  };
+  try{
+    const r=await fetch('/api/enquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    const result=await r.json();
+    if(!r.ok || !result.ok) throw new Error(result.error||'Submission failed');
+    status.textContent='Enquiry received. ID: '+result.enquiryId;
+    btn.textContent='Enquiry sent ✓';
+    const text=`Hello EMERGENCE ANDAMAN!%0A%0AEnquiry ID: ${encodeURIComponent(result.enquiryId)}%0AName: ${encodeURIComponent(data.name)}%0APhone: ${encodeURIComponent(data.phone)}%0ADates: ${encodeURIComponent(data.travelStart+' to '+data.travelEnd)}%0ATravellers: ${encodeURIComponent(data.adults+' adults, '+data.children+' children')}%0ADestination: ${encodeURIComponent(data.destination)}%0APackage: ${encodeURIComponent(data.package)}%0ARequirements: ${encodeURIComponent(data.message)}`;
+    window.open('https://wa.me/919876543210?text='+text,'_blank');
+  }catch(err){
+    status.textContent='We could not submit the enquiry. Please try again or contact us on WhatsApp.';
+    btn.disabled=false; btn.textContent='Send enquiry';
+  }
+}
+</script>
+</body>
+</html>
